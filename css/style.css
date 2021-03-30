@@ -1,0 +1,572 @@
+@charset "utf-8";
+
+.tag_blue {
+	color:blue !important;
+	}
+.tag_green {
+	color:green !important;
+	}
+.tag_red {
+	color:red !important;
+	}
+.title_style {
+	color:rgba(51,51,51,1);
+	background-color:rgba(204,204,204,1);
+	}
+.border_style {
+	border:1px solid rgba(204,204,204,1);
+	}
+.text_hover_style a:hover {
+	color:red !important;
+	}
+.checked_hover_style a:hover {
+	background-color:rgba(48,100,187,1) !important;
+	border-radius:2px;
+	color:rgba(255,255,255,1) !important;
+	}
+body {
+	background:rgba(255,255,255,1) /*url(../img/20171016.png) no-repeat center 40px*/;
+	}
+#header {
+	width:100%;
+	background-color:rgba(201,0,0,1);
+	position:fixed;
+	top:0;
+	z-index:9999;
+	}
+#header .header_div {
+	width:1000px;
+	height:40px;
+	line-height:40px;
+	margin:0 auto;
+	}
+#header .header_div li {
+	display:block;
+	width:85px;
+	text-align:center;
+	float:left;
+	margin:0 2px;
+	cursor:pointer;
+	}
+#header .header_div a {
+	display:block;
+	font-size:16px;
+	color:rgba(255,255,255,1);
+	}
+#header .header_div a:hover {
+	background-color:rgba(0,0,0,1);
+	}
+#nav {
+	width:1000px;
+	height:80px;
+	margin:55px auto 10px auto;
+	background-color:rgba(255,255,255,1);
+	}
+#nav .logo {
+	width:200px;
+	height:80px;
+	float:left;
+	}
+#nav .logo h1 {
+	display:none;
+	}
+#nav .baidu_search {
+	width:800px;
+	height:60px;
+	line-height:60px;
+	float:right;
+	position:relative;
+	}
+#nav .baidu_search_box {
+	width:748px;
+	height:40px;
+	line-height:40px;
+	border:1px solid rgba(48,100,187,1);
+	margin-left:20px;
+	font-size:14px;
+	padding-left:10px;
+	position:absolute;
+	top:14px;
+	}
+#nav .baidu_search_submit {
+	width:120px;
+	height:40px;
+	line-height:40px;
+	background-color:rgba(48,100,187,1);
+	border:1px solid rgba(48,100,187,1);
+	font-size:14px;
+	color:rgba(255,255,255,1);
+	cursor:pointer;
+	position:absolute;
+	top:15px;
+	right:21px;
+	}
+#nav .hot_search {
+	width:800px;
+	float:left;
+	}
+#nav .hot_search ul {
+	position:relative;
+	left:22px;
+	}
+#nav .hot_search li {
+	display:block;
+	height:20px;
+	margin-left:8px;
+	line-height:20px;
+	float:left;
+	}
+#section {
+	width:1000px;
+	height:100%;
+	margin:0 auto;
+	background-color:rgba(255,255,255,1);
+	}
+#aside {
+	width:200px;
+	float:left;
+	}
+#aside .utility_tool {
+	margin:0 0 10px 0;
+	text-align:center;
+	}
+#aside .baidu_list {
+	margin:0 0 10px 0;
+	text-align:center;
+	height:370px;
+	overflow:hidden;
+	}
+#aside .utility_tool h2 {
+	font-size:14px;
+	font-weight:bold;
+	text-indent:8px;
+	height:25px;
+	line-height:25px;
+	text-align:left;
+	}
+#aside .baidu_list h2 {
+	font-size:14px;
+	font-weight:bold;
+	text-indent:8px;
+	height:25px;
+	line-height:25px;
+	text-align:left;
+	}
+#aside .aside_jd_ad, #aside .aside_alimama_ad, #aside .aside_gome_ad, #aside .aside_vip_ad, #aside .aside_meituan_ad {
+	margin:5px 0;
+	}
+.aside_alimama_ad {
+	margin-bottom:7px;
+	}
+.aside_alimama_ad a:hover {
+	background:none !important;
+	}
+#aside .tag {
+	padding:5px 0;
+	}
+#aside .tag li {
+	display:inline-block;
+	width:90px;
+	height:20px;
+	line-height:20px;
+	margin:3px;
+	}
+#aside .tag a {
+	display:block;
+	}
+#article {
+	width:790px;
+	float:right;
+	}
+#article .famous_website {
+	margin:0 0 10px 0;
+	text-align:center;
+	}
+#article .famous_website h2 {
+	font-size:14px;
+	font-weight:bold;
+	text-indent:8px;
+	height:25px;
+	line-height:25px;
+	text-align:left;
+	}
+#article .famous_website .tag {
+	padding:5px 0;
+	}
+#article .famous_website .tag li {
+	display:inline-block;
+	width:120px;
+	height:30px;
+	line-height:30px;
+	margin:3px;
+	text-align:left;
+	}
+#article .famous_website .tag a {
+	display:block;
+	text-indent:30px;
+	}
+#article .famous_website_baidu {
+	background:url(../img/baidu.png) no-repeat 5px center;
+	}
+#article .famous_website_sina {
+	background:url(../img/sina.png) no-repeat 5px center;
+	}
+#article .famous_website_tencent {
+	background:url(../img/tencent.png) no-repeat 5px center;
+	}
+#article .famous_website_sohu {
+	background:url(../img/sohu.png) no-repeat 5px center;
+	}
+#article .famous_website_163 {
+	background:url(../img/163.png) no-repeat 5px center;
+	}
+#article .famous_website_people {
+	background:url(../img/people.png) no-repeat 5px center;
+	}
+#article .famous_website_jd {
+	background:url(../img/jd.png) no-repeat 5px center;
+	}
+#article .famous_website_tmall {
+	background:url(../img/tmall.png) no-repeat 5px center;
+	}
+#article .famous_website_suning {
+	background:url(../img/suning.png) no-repeat 5px center;
+	}
+#article .famous_website_taobao {
+	background:url(../img/taobao.png) no-repeat 5px center;
+	}
+#article .famous_website_amazon {
+	background:url(../img/amazon.png) no-repeat 5px center;
+	}
+#article .famous_website_yhd {
+	background:url(../img/yhd.png) no-repeat 5px center;
+	}
+#article .famous_website_youku {
+	background:url(../img/youku.png) no-repeat 5px center;
+	}
+#article .famous_website_iqiyi {
+	background:url(../img/iqiyi.png) no-repeat 5px center;
+	}
+#article .famous_website_mgtv {
+	background:url(../img/mgtv.png) no-repeat 5px center;
+	}
+#article .famous_website_6 {
+	background:url(../img/6.png) no-repeat 5px center;
+	}
+#article .famous_website_ifeng {
+	background:url(../img/ifeng.png) no-repeat 5px center;
+	}
+#article .famous_website_live {
+	background:url(../img/live.png) no-repeat 5px center;
+	}
+#article .famous_website_icbc {
+	background:url(../img/icbc.png) no-repeat 5px center;
+	}
+#article .famous_website_abc {
+	background:url(../img/abc.png) no-repeat 5px center;
+	}
+#article .famous_website_boc {
+	background:url(../img/boc.png) no-repeat 5px center;
+	}
+#article .famous_website_ccb {
+	background:url(../img/ccb.png) no-repeat 5px center;
+	}
+#article .famous_website_bocomm {
+	background:url(../img/bocomm.png) no-repeat 5px center;
+	}
+#article .famous_website_alipay {
+	background:url(../img/alipay.png) no-repeat 5px center;
+	}
+#article .famous_website_vip {
+	background:url(../img/vip.png) no-repeat 5px center;
+	}
+#article .famous_website_gome {
+	background:url(../img/gome.png) no-repeat 5px center;
+	}
+#article .famous_website_juhuasuan {
+	background:url(../img/juhuasuan.png) no-repeat 5px center;
+	}
+#article .famous_website_redbaby {
+	background:url(../img/redbaby.png) no-repeat 5px center;
+	}
+#article .famous_website_jumei {
+	background:url(../img/jumei.png) no-repeat 5px center;
+	}
+#article .famous_website_mogujie {
+	background:url(../img/mogujie.png) no-repeat 5px center;
+	}
+#article .famous_website_apple {
+	background:url(../img/apple.png) no-repeat 5px center;
+	}
+#article .famous_website_xiaomi {
+	background:url(../img/xiaomi.png) no-repeat 5px center;
+	}
+#article .famous_website_tmall3c {
+	background:url(../img/tmall3c.png) no-repeat 5px center;
+	}
+#article .famous_website_lemall {
+	background:url(../img/lemall.png) no-repeat 5px center;
+	}
+#article .famous_website_huawei {
+	background:url(../img/huawei.png) no-repeat 5px center;
+	}
+#article .famous_website_kaola {
+	background:url(../img/kaola.png) no-repeat 5px center;
+	}
+#article .famous_website_ctrip {
+	background:url(../img/ctrip.png) no-repeat 5px center;
+	}
+#article .famous_website_lvmama {
+	background:url(../img/lvmama.png) no-repeat 5px center;
+	}
+#article .famous_website_12306 {
+	background:url(../img/12306.png) no-repeat 5px center;
+	}
+#article .famous_website_baidumap {
+	background:url(../img/baidumap.png) no-repeat 5px center;
+	}
+#article .famous_website_alitrip {
+	background:url(../img/alitrip.png) no-repeat 5px center;
+	}
+#article .famous_website_autohome {
+	background:url(../img/autohome.png) no-repeat 5px center;
+	}
+#article .famous_website_wechat {
+	background:url(../img/wechat.png) no-repeat 5px center;
+	}
+#article .famous_website_weibo {
+	background:url(../img/weibo.png) no-repeat 5px center;
+	}
+#article .famous_website_music {
+	background:url(../img/music.png) no-repeat 5px center;
+	}
+#article .famous_website_58 {
+	background:url(../img/58.png) no-repeat 5px center;
+	}
+#article .famous_website_zhaopin {
+	background:url(../img/zhaopin.png) no-repeat 5px center;
+	}
+#article .famous_website_mail {
+	background:url(../img/mail.png) no-repeat 5px center;
+	}
+#article .famous_website_shijijiayuan {
+	background:url(../img/shijijiayuan.png) no-repeat 5px center;
+	}
+#article .famous_website_bilibili {
+	background:url(../img/bilibili.png) no-repeat 5px center;
+	}
+#article .famous_website_junshi {
+	background:url(../img/junshi.png) no-repeat 5px center;
+	}
+#article .famous_website_eastmoney {
+	background:url(../img/eastmoney.png) no-repeat 5px center;
+	}
+#article .famous_website_lesport {
+	background:url(../img/lesport.png) no-repeat 5px center;
+	}
+#article .famous_website_taobao {
+	background:url(../img/taobao.png) no-repeat 5px center;
+	}
+#article .cool_website {
+	margin:0 0 10px 0;
+	text-align:center;
+	}
+#article .cool_website h2 {
+	font-size:14px;
+	font-weight:bold;
+	text-indent:8px;
+	height:25px;
+	line-height:25px;
+	text-align:left;
+	}
+#article .cool_website .tag {
+	padding:5px 0;
+	}
+#article .cool_website .cool_website_menu {
+	text-align:left;
+	margin:0 10px;
+	}
+#article .cool_website .menu_title_style {
+	color:rgba(48,100,187,1);
+	font-weight:bold;
+	}
+#article .cool_website hr {
+	width:92.5%;
+	border:1px dashed rgba(204,204,204,1);
+	border-top:none;
+	border-left:none;
+	border-right:none;
+	}
+#article .cool_website .tag li {
+	display:inline-block;
+	height:35px;
+	line-height:35px;
+	}
+#article .cool_website .tag a {
+	display:inline-block;
+	width:73px;
+	text-align:center;
+	}
+#sitemap {
+	width:1000px;
+	height:100%;
+	margin:55px auto 10px auto;
+	background-color:rgba(255,255,255,1);
+	}
+#sitemap .sitemap {
+	margin-bottom:10px;
+	}
+#sitemap .sitemap h2 {
+	font-size:14px;
+	font-weight:bold;
+	text-indent:8px;
+	height:25px;
+	line-height:25px;
+	text-align:left;
+	}
+#sitemap .sitemap .tag {
+	padding:5px 0;
+	}
+#sitemap .sitemap .tag li {
+	display:inline-block;
+	width:90px;
+	height:30px;
+	line-height:30px;
+	margin:3px;
+	text-align:center;
+	}
+#sitemap .sitemap .tag a {
+	display:block;
+	}
+#tab .tab {
+	position:relative;
+	width:998px;
+	height:370px;
+	overflow:hidden;
+	}
+#tab .tab-nav {
+	height:25px;
+	overflow:hidden;
+	}
+#tab .tab-nav a {
+	width:100px;
+	font-size:14px;
+	font-weight:bold;
+	color:rgba(51,51,51,1);
+	height:25px;
+	line-height:25px;
+	display:block;
+	float:left;
+	text-align:center;
+	}
+#tab .tab-nav a.current {
+	background-color:rgba(48,100,187,1);
+	}
+#tab .tab-con {
+	position:relative;
+	height:370px;
+	overflow:hidden;
+	}
+#tab .tab-con-item {
+	text-align:center;
+	overflow:hidden;
+	}
+#tab .tab-con-item iframe {
+	overflow:hidden;
+	}
+.banner_suning_ad, .banner_alimama_ad, .banner_sogou_ad, .banner_gome_ad, .banner_google_ad {
+	margin:10px 0;
+	text-align:center;
+	}
+.banner_alimama_ad a:hover, .banner_suning_ad a:hover {
+	background:none !important;
+	}
+.imagenews {
+	width:998px;
+	height:370px;
+	overflow:hidden;
+	margin:10px 0;
+	}
+.imagenews h2 {
+	font-size:14px;
+	font-weight:bold;
+	text-indent:8px;
+	height:25px;
+	line-height:25px;
+	text-align:left;
+	}
+.menu_nav {
+	text-align:center;
+	margin:10px auto;
+	width:998px;
+	height:175px;
+	}
+.menu_nav h2 {
+	font-size:14px;
+	font-weight:bold;
+	text-indent:8px;
+	height:25px;
+	line-height:25px;
+	text-align:left;
+	}
+.menu_nav .menu_nav_item ul {
+	display:inline-block;
+	width:310px;
+	height:130px;
+	margin:5px;
+	}
+.menu_nav .menu_nav_item ul h3 {
+	font-size:14px;
+	font-weight:bold;
+	text-indent:22px;
+	height:25px;
+	line-height:25px;
+	text-align:left;
+	color:#333;
+	}
+.menu_nav .menu_nav_item ul li{
+	display:inline-block;
+	}
+.menu_nav .menu_nav_item ul li a {
+	display:inline-block;
+	width:55px;
+	height:28px;
+	line-height:28px;
+	}
+#footer {
+	width:100%;
+	height:90px;
+	background-color:rgba(48,100,187,1);
+	clear:both;
+	}
+#footer .footer_menu {
+	width:998px;
+	height:50px;
+	line-height:60px;
+	margin:0 auto;
+	}
+#footer .footer_menu li {
+	display:inline-block;
+	text-align:center;
+	}
+#footer .footer_menu ul li a {
+	display:inline-block;
+	width:85px;
+	height:30px;
+	line-height:30px;
+	}
+#footer .footer_menu ul li a:hover {
+	background-color:rgba(0,0,0,1);
+	border-radius:2px;
+	color:#FFF;
+	}
+#footer .footer_copyright {
+	width:998px;
+	margin:0 auto;
+	}
+#footer .footer_copyright span {
+	display:inline-block;
+	text-indent:10px;
+	height:20px;
+	line-height:20px;
+	}
